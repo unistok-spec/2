@@ -1,9 +1,10 @@
 import { defineConfig, loadEnv } from 'vite';
 import react from '@vitejs/plugin-react';
 
-// https://vitejs.dev/config/
-export default defineConfig(({ mode }) => {
+export default defineConfig((configEnv) => {
+  const mode = configEnv.mode;
   const env = loadEnv(mode, process.cwd(), '');
+  
   return {
     plugins: [react()],
     define: {
@@ -17,4 +18,4 @@ export default defineConfig(({ mode }) => {
       outDir: 'dist',
     }
   };
-});м
+});
