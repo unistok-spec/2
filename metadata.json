@@ -1,0 +1,7 @@
+{
+  "name": "LingoBro - AI Language Companion",
+  "description": "Официальный лендинг приложения LingoBro. Твой карманный бро для изучения языков с искусственным интеллектом.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
